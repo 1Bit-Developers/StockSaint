@@ -33,7 +33,7 @@ StockSaint is a free, online Stock Market based Responsive Web-Application. It a
       <li>API Data is recieved in CSV format.</li>
       <li>Pandas is used to create and clean the dataframe formed using the data.</li>
       <li>Calculation for the Running Average or Exponential Smoothing is done on basis of window specified.</li>
-      <li>Matploblib plots the Original Graph and the Trend Graph.</li>
+      <li>Matplotlib plots the Original Graph and the Trend Graph.</li>
       <li>Slope of the graph is used to calculate the prediction and Market sentiment.</li>
       <li>Caluculate results are returned for display.</li>
     </ol>
