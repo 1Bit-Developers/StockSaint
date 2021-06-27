@@ -1,0 +1,74 @@
+/* ================== CLASS SELECTOR ================ */
+
+.about_us_section{
+	width:60%;
+	background-color: #F3F0D7; 
+	padding: 20px; 
+	border-style: solid;
+	border-color: #B2B8A3;
+	border-radius: 10px 0 10px 0;
+	transition-duration: 0.5s;
+}
+
+.about_us_section_top{
+	display: flex; 
+}
+
+.about_us_section_bottom{
+	display: flex; 
+}
+
+.about_us_section:Hover{
+	background-color: #F4C7AB;
+	border-style: solid;
+	border-color:  #CEE5D0;
+	border-radius: 10px 0 10px 0;
+	-webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+ 	transition-duration: 0.5s;
+}
+
+.site_usage_section{
+	width:60%; 
+	background-color: #F3F0D7; 
+	padding: 20px; 
+	border-radius: 10px 0 10px 0;
+	border-style: solid;
+	border-color: #B2B8A3;
+	border-radius: 10px 0 10px 0;
+	transition-duration: 0.5s;
+}
+
+.site_usage_section:Hover{
+	background-color: #F4C7AB;
+	border-style: solid;
+	border-color:  #CEE5D0;
+	border-radius: 10px 0 10px 0;
+	-webkit-transform: scaleX(1.03) scaleY(1.005);
+    -ms-transform: scaleX(1.03) scaleY(1.005);
+    transform: scaleX(1.03) scaleY(1.005);
+ 	transition-duration: 0.5s;
+}
+
+.team_section{
+	width:60%; 
+	background-color: #F3F0D7; 
+	padding: 20px; 
+	border-radius: 10px 0 10px 0;
+	border-style: solid;
+	border-color: #B2B8A3;
+	border-radius: 10px 0 10px 0;
+	transition-duration: 0.5s;
+}
+
+.team_section:Hover{
+	background-color: #F4C7AB;
+	border-style: solid;
+	border-color:  #CEE5D0;
+	border-radius: 10px 0 10px 0;
+	-webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+ 	transition-duration: 0.5s;
+}

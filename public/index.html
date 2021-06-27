@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock Predictor</title>
+  <meta charset="utf-+8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="icon" href="animated_favicon1.gif" type="image/gif">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage" style = "font-size: 15px;">HOME</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#user1">USER</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div style="background-color: #eee" class="jumbotron text-center">
+
+  <a href="index.html"><img src = "logo.png" style = "float: left; height: 14%; width: 14%;" /></a>
+  <h1>StockSaint</h1>
+  <p>Visualize | Analyse | Predict</p>
+
+</div>
+
+<!-- Container (About Section) -->
+<div style="background-color: #91ffff" id="about" class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>About StockSaint</h3><br>
+      <h4 class="about-margin3" style = "line-height: 1.7;">
+        StockSaint is a free, online Stock Market based Responsive Web-Application. It allows users to <strong>Visualize</strong>, <strong>Analyse</strong> and <strong>Predict</strong> the Stock Market Movements based on some commonly used Market Dynamics. Our Goal is to generate the best yet simple visualizations for any person who is a Novice or an Advanced in Stock Analysis.
+      </h4>
+      <a href="about_us_detailed.html"><h4 class="about-margin3"><u>view detailed page here</u></h4></a>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <span> <img src="bloomberg-stock-market-share-price.png" alt="stock-price-up-png" type="image/png"> </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Container (User type Section) -->
+<div style="background-color: #91ffc6 " id="user1" class="container-fluid">
+  <div class="text-center">
+    <h2>User</h2>
+    <h4>Choose a user type that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <h3> Just about opening and closing prices.<h3>
+        </div>
+        <div class="panel-footer">
+          <br><br><br><br>
+          <a href="basic.html" class="btn btn-lg">Basic</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Advanced</h1>
+        </div>
+        <div class="panel-body">
+          <h3> View all prediction related charts<h3>
+
+        </div>
+        <div class="panel-footer">
+          <br><br><br><br>
+          <a href="advanced.html" class="btn btn-lg">Advanced</a>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<!-- Footer -->
+
+  <footer class="white-section" id="footer" align="center">
+    <div class="container-fluid" id="contact">
+      <a href="https://github.com/1Bit-Developers" target="_blank"><i class="social-icon fab fa-github"></i></a>
+      <a href="mailto:singh20shreyansh@gmail.com;arjunsharma1620@gmail.com;misrapratyush20080@gmail.com;hardikagarwal2001@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2021 StockSaint</p>
+    </div>
+  </footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#Index.html']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

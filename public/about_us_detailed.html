@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock Predictor</title>
+  <meta charset="utf-+8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="css/about_us.css" type="text/css">
+  <link rel="icon" href="animated_favicon1.gif" type="image/gif">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" style = "font-size: 15px;">HOME</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="index.html#user1">USER</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div style="background-color: #eee" class="jumbotron text-center">
+
+  <a href="index.html"><img src = "logo.png" class="logo" style = "float: left; height: 14%; width: 14%;" /></a>
+  <h1>StockSaint</h1>
+  <p>Visualize | Analyse | Predict</p>
+
+</div>
+
+<br>
+
+<center>
+  <!-- ABOUT US SECTION -->
+  <div class="about_us_section">
+    <div align="left" class="about_us_section_top">
+      <div style="flex: 70%;">
+        <h2>Who we are?</h2>
+        <h4 class="about-margin3" style = "line-height: 1.7;">
+            StockSaint is a free, online Stock Market based Responsive Web-Application. It allows users to <strong>Visualize</strong>, <strong>Analyse</strong> and <strong>Predict</strong> the Stock Market Movements based on some commonly used Market Dynamics. Our Goal is to generate the best yet simple visualizations for any person who is a Novice or an Advanced in Stock Analysis.
+        </h4>
+      </div>
+      <div align="center" style="flex: 30%;"><br><img src = "board.gif"></div>
+    </div>
+
+    <div align="left" class="about_us_section_bottom">
+      <div align="center" style="flex: 30%;"><br><br><br><img src = "1Bit.png"></div>
+      <div style="flex: 70%;">
+        <h2 style="padding-left: 5%">1Bit-Developers</h2>
+        <h4 class="about-margin3" style = "line-height: 1.7;padding-left: 5%;">
+          StockSaint has been developed by 1Bit-Developers. We are a group of 4 hardworking people who are completely open to new ideas, challenges and feedbacks. We want to serve better to our users by designing what we value and believe in. We like to work with people who are hardworking and passionate towards their area of work.
+      </h4>
+    </div>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- SITE USAGE / TUTORIAL SECTION -->
+  <div id="site_usage"></div><br>
+  <div align="left" class="site_usage_section">
+    <h2>Site Usage</h2>
+      <h4 class="about-margin3" style = "line-height: 1.7;">
+          StockSaint offers analysis charts for 2 main types of users- <br> <strong>Basic</strong> and <strong>Advanced</strong>.
+          <br><br>
+          We offers 5 Market Dynamics to the users for analysis and visualization: <br>
+
+          <ol>
+            <li>
+              Open
+              <ul>
+                <li>Depicts the Opening Price of the Stock.</li>
+                <li>Opening price is the price at which a security first trades upon the opening of an exchange on a trading day</li>
+              </ul>
+            </li><br>
+
+            <li>
+              Close
+              <ul>
+                <li>Depicts the Closing Price of the Stock.</li>
+                <li>Closing price refers to the last price at which a stock trades during a regular trading session.</li>
+              </ul>
+            </li><br>
+
+            <li>
+              High
+              <ul>
+                <li>Depicts High Stock Price value.</li>
+                <li>Highest closing price of a stock over a span of time, adjusted for any stock splits, or the highest intraday price of a stock in the most recent (or current) trading session.</li>
+              </ul>
+            </li><br>
+
+            <li>
+              Low
+              <ul>
+                <li>Depicts Low Stock Price value.</li>
+                <li>The day's lowest price of a security that has changed hands between a buyer and a seller.</li>
+              </ul>
+            </li><br>
+
+            <li>
+              Volume
+              <ul>
+                <li>Depicts the Traded Volume of the Stock.</li>
+                <li>Volume is the daily number of shares of a security that change hands between a buyer and a seller. Also known as volume traded.</li>
+              </ul>
+            </li>
+          </ol>
+          <br><br>
+
+          For both type of users, we need 2 things in common- <br>
+          <ol>
+            <li>
+            Stock Symbol (or Ticker)
+              <ul>
+                <li>A Stock Symbol is an arrangement of characters—usually letters—representing publicly-traded securities on an exchange.</li>
+                <li>When a company issues securities to the public marketplace, it selects an available symbol for its shares, often related to the <strong>company</strong> name.</li>
+                <li>Like Ticker for Amazon is AMZN, Google is GOOGL and for Apple is AAPL.</li>
+              </ul>
+            </li><br>
+
+            <li>
+            Stock Exchange
+              <ul>
+                <li>A Stock Exchange where stockbrokers and traders can buy and sell securities, such as shares of stock, bonds, and other financial instruments.</li>
+                <li>It facilitates the transfer of funds between investors and businesses, regulating as necessary to provide maximum safety for everyone's investments.</li>
+                <li>Examples are NSE(National Stock Exchange of India), BSE, NASDAQ, NYSE etc.</li>
+              </ul>
+            </li>
+          </ol>
+          <br><br>
+
+          User Type: <br>
+          <ol>
+            <li>
+            <strong><u>Basic</u></strong>
+            <ul>
+              <li>Basic User is one who does not have much of a knowledge about Stock Market and its Dynamics.</li>
+              <li>For these types of users, we have given the functionality to generate 2 major plots- <strong>Closing</strong> and <strong>Opening</strong> Prices.</li>
+              <li>For generating these plots, user only needs to know 2 things- <strong>Stock Symbol</strong> and <strong>Stock Exchange</strong>.</li>
+              <li>
+              See below: <br>
+              Let's say Basic user wants to generate the Original and Trend Line Plot of <i>IBM</i> which comes under <i>NASDAQ Stock Exchange</i>.<br> 
+              <strong>1) Filling the Data</strong> <br>
+              <img src="site_usage_ss/basic/1.png" style="width: 100%;" /> <br> <br>
+
+              <strong>2) Generating the Original and Prediction Graphs</strong> <br>
+              <img src="site_usage_ss/basic/2.png" style="width: 100%;" /> <br> <br>
+              <img src="site_usage_ss/basic/3.png" style="width: 100%;" /> <br><br>
+              </li>
+            </ul>
+            </li>
+
+            <li>
+            <strong><u>Advanced</u></strong>
+            <ul>
+              <li>Advanced User is one who has descent amount of knowledge about Stock Market, its Dynamics and their importance.</li>
+              <li>For these types of users, we have given the functionality to generate 5 dynamic plots- <br>
+                <strong>Closing</strong>, <strong>Opening</strong>, <strong>High</strong>, <strong>Low</strong> Prices and <strong>Volume</strong> traded.</li>
+              <li>
+              For generating these plots, user needs to know 5 things- <br>
+                <ul>
+                  <li>Stock Symbol</li>
+                  <li>Stock Exchange</li>
+                  <li>Prediction Type - What kind of plot and their Visulization user wants i.e. Opening, Closing, High, Low or Volume.</li>
+                  <li>Technique - What Technique to use for Plotting, Moving Average or Exponential Smoothing.<br> Moving Average Method stores a running mean of some of the previous elements similar to Sliding Window to predict the trend of the Plot. <br>
+                  Exponential Smoothing technique works on the simple principle by giving more weightage to the recent data and less to the previous data. It is really a powerfull technique and may be used as an alternative to Box-Jenkins ARIMA family of methods.</li>
+                  <li>Window Size - Positive Integer value denoting the size of the window to use for plotting the trend line and estimating predictions i.e. How many previous values to consider for plotting the trends. <br> <strong>Window Size of 2-3 is really good for more accurate plotting purposes.</strong></li>
+                </ul>
+              </li>
+              <br>
+              <li>
+              See below: <br>
+              Let's say Advanced user wants to generate the Original and Trend Line Plot of IBM which comes under NASDAQ Stock Exchange.<br>
+              User wants to plot <i>"Closing Price Value"</i> Plots with a <i>Window Size = 3</i> using <i>"Moving Average"</i> technique.<br>
+              <strong>1) Filling the Data</strong> <br>
+              <img src="site_usage_ss/advanced/1.png" style="width: 100%;" /> <br> <br>
+
+              <strong>2) Generating the Original and Prediction Graphs</strong> <br>
+              <img src="site_usage_ss/advanced/2.png" style="width: 100%;" /> <br> <br>
+              <img src="site_usage_ss/advanced/3.png" style="width: 100%;" /> <br>
+              </li>
+            </ul>
+            </li>
+          </ol>
+      </h4>
+  </div>
+  <br><br>
+
+  <!-- HOW THE SITE WORKS
+  <div align="left" style="width:60%; background-color: #F3F0D7; padding: 20px; display: flex; border-radius: 10px 0 10px 0;">
+    <div style="flex: 70%;">
+      <h2>About Us</h2>
+      <h4 class="about-margin3" style = "line-height: 1.7;">
+          StockSaint is a free, online Stock Market based Responsive Web-Application. It allows users to <strong>Visualize</strong>, <strong>Analyse</strong> and <strong>Predict</strong> the Stock Market Movements based on some commonly used Market Dynamics. Our Goal is to generate the best yet simple visualizations for any person who is a Novice or an Advanced in Stock Analysis.
+      </h4>
+    </div>
+    <div align="center" style="flex: 30%;"><br><img src = "board.gif"></div>
+  </div>
+  <br><br> -->
+
+  <br>
+  <!-- THE TEAM SECTION -->
+  <div align="left" class="team_section">
+    <h2>The Team <br> <font size=2rem>Website made by  1Bit - Developers</font><br></h2>
+    <div style="display: flex;">
+      <div align="center" style="flex: 30%; "> <img src="team_member_pics/arjun.jpeg" height="150px" width="150px" style="border-radius: 200px;"/> </div>
+      <div style="flex: 70%; padding-left: 15%;">
+        <p style="font-size: 2rem; line-height: 1.4;"><br>
+          <font color="black">Arjun Sharma <br>
+          FrontEnd Developer <br></font>
+        <a href="https://www.linkedin.com/in/arjunsharma16/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+      </div>
+    </div>
+    <br><br>
+
+
+    <div style="display: flex;">
+      <div align="center" style="flex: 30%; "> <img src="team_member_pics/shreyansh.jpg" height="150px" width="150px" style="border-radius: 200px;"/> </div>
+      <div style="flex: 70%; padding-left: 15%;">
+        <p style="font-size: 2rem; line-height: 1.4;"><br>
+          <font color="black">Shreyansh Singh <br>
+          BackEnd Developer (NodeJS) + FrontEnd Developer</font> <br>
+          <a href="https://www.linkedin.com/in/shreyansh-singh-50a792187/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+      </div>
+    </div>
+    <br><br>
+
+    <div style="display: flex;">
+      <div align="center" style="flex: 30%; "> <img src="team_member_pics/pratyush.png" style="border-radius: 200px;"/> </div>
+      <div style="flex: 70%; padding-left: 15%;">
+        <p style="font-size: 2rem; line-height: 1.4;"><br>
+          <font color="black">Pratyush Misra <br>
+          BackEnd Developer (Graph Plotting)</font> <br>
+          <a href="http://www.linkedin.com/in/pratyush-misra-908493135" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+      </div>
+    </div>
+    <br><br>
+
+    <div style="display: flex;">
+      <div align="center" style="flex: 30%; "> <img src="team_member_pics/hardik.jpg" height="150px" width="150px" style="border-radius: 200px;"/> </div>
+      <div style="flex: 70%; padding-left: 15%;">
+        <p style="font-size: 2rem; line-height: 1.4;"><br>
+          <font color="black">Hardik Agarwal <br>
+          BackEnd Developer (Graph Plotting)</font> <br>
+          <a href="https://www.linkedin.com/in/hardik-agarwal-491050190/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</center>
+
+<footer class="white-section" id="footer" align="center">
+    <div class="container-fluid" id="contact">
+      <a href="https://github.com/1Bit-Developers" target="_blank"><i class="social-icon fab fa-github"></i></a>
+      <a href="mailto:singh20shreyansh@gmail.com;arjunsharma1620@gmail.com;misrapratyush20080@gmail.com;hardikagarwal2001@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+      <p>© Copyright 2021 StockSaint</p>
+    </div>
+</footer>
+
+</body>
+</html>
