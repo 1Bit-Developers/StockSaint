@@ -6,11 +6,7 @@ var fs = require('fs');
 
 const ejs = require('ejs');
 
-const converter = require('json-2-csv'); //passes json to csv
 
-const axios = require('axios'); //requires the axios module which helps in making get and post requests from API
-
-const execa = require('execa');
 
 const https = require("https"); //works similarly like the axios module
 
@@ -55,18 +51,18 @@ app.post("/public/basic.html", function(req, resp) {
   var symbol = req.body.company; //the company symbol which the user enters
   var stock = req.body.stockType;
   let stockoption;
-  console.log(symbol);
+
   if (stock == "1") {
     stockoption = "BSE";
   } else {
     stockoption = "NASDAQ";
   }
-  console.log(stockoption);
+
   if (stockoption == "BSE") {
     symbol = symbol + "." + stockoption;
   }
-  console.log(symbol);
-  
+
+
 
   var url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&datatype=csv&symbol=" + symbol + "&apikey=E3SOUHEOPD38CMZ4"; //api url
   //generates request for csv data
@@ -81,15 +77,12 @@ app.post("/public/basic.html", function(req, resp) {
     } else if (res.statusCode !== 200) {
       console.log('Status:', res.statusCode);
     } else {
-      console.log(info);
       const python = spawn('python', ['basic.py', info, stockoption]);
       // collect data from script
       python.stdout.on('data', function(data) {
         console.log('Pipe data from python script ...');
         dataToSend = data.toString();
-        console.log(dataToSend);
         var result = dataToSend.split("%");
-        console.log(result[0]);
         var toSend = {
           closeBasic : '/fig_basic_closing.png',
           closeAdvanced : "/fig_basic_prediction_closing.png",
@@ -119,17 +112,17 @@ app.post("/public/advanced.html", function(req, resp) {
   var symbol = req.body.company; //the company symbol which the user enters
   var stock = req.body.stockType;
   let stockoption;
-  console.log(symbol);
+
   if (stock == "1") {
     stockoption = "BSE";
   } else {
     stockoption = "NASDAQ";
   }
-  console.log(stockoption);
+
   if (stockoption == "BSE") {
     symbol = symbol + "." + stockoption;
   }
-  console.log(symbol);
+
 
   var pred = req.body.prediction;
   let predictionType;
@@ -152,10 +145,10 @@ app.post("/public/advanced.html", function(req, resp) {
   }else{
     inResult=predictionType;
   }
-  console.log(predictionType);
+
 
   var windowVal = req.body.window;
-  console.log(windowVal);
+
 
   var tech = req.body.methodTech;
   let techName;
@@ -165,7 +158,7 @@ app.post("/public/advanced.html", function(req, resp) {
     techName = "exponential_smoothing";
   }
 
-  console.log(techName);
+
 
   var url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&datatype=csv&symbol=" + symbol + "&apikey=E3SOUHEOPD38CMZ4"; //api url
   //generates request for csv data
@@ -180,15 +173,15 @@ app.post("/public/advanced.html", function(req, resp) {
     } else if (res.statusCode !== 200) {
       console.log('Status:', res.statusCode);
     } else {
-      console.log(info);
+
       const python = spawn('python', ['advanced.py', info, predictionType, windowVal, techName, stockoption]);
       // collect data from script
       python.stdout.on('data', function(data) {
         console.log('Pipe data from python script ...');
         dataToSend = data.toString();
-        console.log(dataToSend);
+
         var result = dataToSend.split("%");
-        console.log(result[0]);
+
         var toSend = {
           original : "/fig_advanced_"+inResult+".png",
           pred : "/fig_advanced_prediction_"+inResult+".png",
