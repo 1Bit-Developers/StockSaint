@@ -1,0 +1,28 @@
+{
+  "name": "stockpredictor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sanskaribois",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "ejs": "^3.1.6",
+    "execa": "^5.1.1",
+    "express": "^4.17.1",
+    "fs": "*",
+    "https": "^1.0.0",
+    "json-2-csv": "^3.14.0",
+    "json2csv": "^5.0.6",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "pm2": "^5.1.0",
+    "request": "^2.88.2",
+    "zingchart": "^2.9.5"
+  }
+}
