@@ -19,7 +19,6 @@
 }
 
 .about_us_section:Hover{
-	background-color: #F4C7AB;
 	border-style: solid;
 	border-color:  #CEE5D0;
 	border-radius: 10px 0 10px 0;
@@ -41,7 +40,6 @@
 }
 
 .site_usage_section:Hover{
-	background-color: #F4C7AB;
 	border-style: solid;
 	border-color:  #CEE5D0;
 	border-radius: 10px 0 10px 0;
@@ -63,7 +61,6 @@
 }
 
 .team_section:Hover{
-	background-color: #F4C7AB;
 	border-style: solid;
 	border-color:  #CEE5D0;
 	border-radius: 10px 0 10px 0;
