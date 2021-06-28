@@ -8,10 +8,20 @@ StockSaint is a free, online Stock Market based Responsive Web-Application. It a
 <img src="https://github.com/1Bit-Developers/StockSaint/blob/main/public/site_usage_ss/readme_fast.gif">
 <br/> <br/>
 
+# WHY?
+
+We have often looked for a way to ease up our way in stock market market predictions but its very hard to predict stock behaviour solely by market patterns especially for beginners ..so we thought of using our historic stock data to our advantage and predict the future trends for us.
+
 ## How it Works?
+
 ### 1) FrontEnd 
 
 ### 2) BackEnd - NodeJS
+* _Express_ Framework used.
+* Stock Data taken from _RESTFUL API_ of AlphaVantage.
+* Challange was to connect Python scripts to work with NodeJS.
+* Used Child Processes to connect with Python.
+* Used _Embedded Javascript Templating_ to parse User requested data to Front-End. 
 
 ### 3) BackEnd - Graph Plotting with Python
 <ul type='circle'>
