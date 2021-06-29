@@ -2,7 +2,7 @@
 ## Visualize | Analyse | Predict
 
 
-# WHY?
+## Why?
 
 We have often looked for a way to ease up our way in stock market market predictions but its very hard to predict stock behaviour solely by market patterns especially for beginners ..so we thought of using our historic stock data to our advantage and predict the future trends for us.
 
