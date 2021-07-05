@@ -9,6 +9,11 @@ We have often looked for a way to ease up our way in stock market market predict
 ## How it Works?
 
 ### 1) FrontEnd 
+* BOOTSTRAP 5.0 used for building the frontend.
+* Used different custom with modifications.
+* Connected the front-end to hyper for sending requests.
+* Used Javascript for sliding animation and smooth scroll.
+* Used different API's for the functioning of backend
 
 ### 2) BackEnd - NodeJS
 * _Express_ Framework used.
