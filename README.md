@@ -8,14 +8,21 @@ We have often looked for a way to ease up our way in stock market market predict
 
 ## How it Works?
 
-### 1) FrontEnd 
+### 1) FrontEnd
+
+* BOOTSTRAP 5.0 used for building the frontend.
+* Used different custom with modifications.
+* Connected the front-end to hyper for sending requests.
+* Used Javascript for sliding animation and smooth scroll.
+* Used different API's for the functioning of backend
+
 
 ### 2) BackEnd - NodeJS
 * _Express_ Framework used.
 * Stock Data taken from _RESTFUL API_ of AlphaVantage.
-* Challange was to connect Python scripts to work with NodeJS.
+* Challenge was to connect Python scripts to work with NodeJS.
 * Used Child Processes to connect with Python.
-* Used _Embedded Javascript Templating_ to parse User requested data to Front-End. 
+* Used _Embedded Javascript Templating_ to parse User requested data to Front-End.
 
 ### 3) BackEnd - Graph Plotting with Python
 <ul type='circle'>
@@ -28,9 +35,9 @@ We have often looked for a way to ease up our way in stock market market predict
       <li><strong>Mplcyberpunk</strong> - For creating "Cyberpunk" Style plots</li>
     </ol>
   </li>
-  
+
   <br>
-  
+
   <li>
     Process:
     <ol type="1">  
