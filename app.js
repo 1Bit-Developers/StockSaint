@@ -6,8 +6,6 @@ var fs = require('fs');
 
 const ejs = require('ejs');
 
-
-
 const https = require("https"); //works similarly like the axios module
 
 const bodyParser = require("body-parser"); //body-parser helps in prsing all the data to the backend which the user enters
@@ -26,11 +24,13 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static("public"));
+app.use(express.static("../tmp"));
+// app.use(express.static('/tmp'));
 
 app.set('view engine', 'ejs');
 
 //runs the server on port 6969
-app.listen(process.env.PORT || 6969, function() {
+app.listen(process.env.PORT || 6849, function() {
   console.log("Server is Running on port 6969");
 });
 
@@ -96,6 +96,7 @@ app.post("/public/basic.html", function(req, resp) {
         resp.render("basicResult",{
           recieved : toSend
         })
+        resp.send(dataToSend);
       });
       // in close event we are sure that stream from child process is closed
       python.on('close', (code) => {
@@ -179,9 +180,9 @@ app.post("/public/advanced.html", function(req, resp) {
       python.stdout.on('data', function(data) {
         console.log('Pipe data from python script ...');
         dataToSend = data.toString();
-
+      
         var result = dataToSend.split("%");
-
+      
         var toSend = {
           original : "/fig_advanced_"+inResult+".png",
           pred : "/fig_advanced_prediction_"+inResult+".png",
