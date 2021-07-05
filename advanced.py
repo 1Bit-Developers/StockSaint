@@ -1,46 +1,11 @@
 import subprocess
 import sys
 
-try:
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import mplcyberpunk
-    # import seaborn as sns
-    # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
-    # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
-    # from scipy.optimize import minimize
-    # import statsmodels.tsa.api as smt
-    # import statsmodels.api as sm
-    # from tqdm import tqdm_notebook
-    # from itertools import product
-
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'pandas'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'numpy'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'matplotlib'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'mplcyberpunk'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'seaborn'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'sklearn'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'scipy'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'statsmodels'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'tqdm'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'itertools'])
-
-finally:
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import mplcyberpunk
-    # import seaborn as sns
-    # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
-    # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
-    # from scipy.optimize import minimize
-    # import statsmodels.tsa.api as smt
-    # import statsmodels.api as sm
-    # from tqdm import tqdm_notebook
-    # from itertools import product
-
+# try:
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import mplcyberpunk
 
 # Getting the Data in string format from NodeJS
 # NodeJS passed 2 args ['./test.py', data] where sys.argv[1] represents DATA
@@ -116,7 +81,7 @@ def gen_my_plot(prediction, original, my_name, my_technique_label):
     plt.legend()
     mplcyberpunk.add_glow_effects()
 
-    file_name = "public/fig_advanced_prediction_" + my_name + '.png'
+    file_name = "/tmp/fig_advanced_prediction_" + my_name + '.png'
     plt.savefig(file_name)
 
 # 3) Prediction function for the Market Dynamic
@@ -166,7 +131,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_opening.png"
+        file_name = "/tmp/fig_advanced_opening.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -214,7 +179,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_closing.png"
+        file_name = "/tmp/fig_advanced_closing.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -263,7 +228,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_high.png"
+        file_name = "/tmp/fig_advanced_high.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -311,7 +276,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_low.png"
+        file_name = "/tmp/fig_advanced_low.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -359,7 +324,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_adjusted_close.png"
+        file_name = "/tmp/fig_advanced_adjusted_close.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -407,7 +372,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_advanced_volume.png"
+        file_name = "/tmp/fig_advanced_volume.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
