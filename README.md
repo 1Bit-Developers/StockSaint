@@ -23,7 +23,7 @@ We have often looked for a way to ease up our way in stock market market predict
     Packages used:
     <ol type="1">
       <li><strong>Numpy</strong> - For Data Analysis</li>
-      <li><strong>Pandas</strong> - For Data Analysis and cleaning</li>
+      <li><strong>Pandas</strong> - For Data Refining and cleaning</li>
       <li><strong>Matplotlib</strong> - For creating plots</li>
       <li><strong>Mplcyberpunk</strong> - For creating "Cyberpunk" Style plots</li>
     </ol>
