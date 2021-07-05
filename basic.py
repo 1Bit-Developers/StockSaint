@@ -1,45 +1,47 @@
 import subprocess
 import sys
 
-try:
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import mplcyberpunk
-    # import seaborn as sns
-    # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
-    # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
-    # from scipy.optimize import minimize
-    # import statsmodels.tsa.api as smt
-    # import statsmodels.api as sm
-    # from tqdm import tqdm_notebook
-    # from itertools import product
+# try:
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import mplcyberpunk
 
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'pandas'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'numpy'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'matplotlib'])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'mplcyberpunk'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'seaborn'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'sklearn'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'scipy'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'statsmodels'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'tqdm'])
-    # subprocess.check_call([sys.executable, "-m", "pip", "install", 'itertools'])
-
-finally:
-    import pandas as pd
-    import numpy as np
-    import matplotlib.pyplot as plt
-    import mplcyberpunk
-    # import seaborn as sns
-    # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
-    # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
-    # from scipy.optimize import minimize
-    # import statsmodels.tsa.api as smt
-    # import statsmodels.api as sm
-    # from tqdm import tqdm_notebook
-    # from itertools import product
+# print("loda hai tu")
+#     # import seaborn as sns
+#     # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
+#     # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
+#     # from scipy.optimize import minimize
+#     # import statsmodels.tsa.api as smt
+#     # import statsmodels.api as sm
+#     # from tqdm import tqdm_notebook
+#     # from itertools import product
+#
+# except ImportError:
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", 'pandas'])
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", 'numpy'])
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", 'matplotlib'])
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", 'mplcyberpunk'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'seaborn'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'sklearn'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'scipy'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'statsmodels'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'tqdm'])
+#     # subprocess.check_call([sys.executable, "-m", "pip", "install", 'itertools'])
+#
+# finally:
+#     import pandas as pd
+#     import numpy as np
+#     import matplotlib.pyplot as plt
+#     import mplcyberpunk
+#     # import seaborn as sns
+#     # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
+#     # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
+#     # from scipy.optimize import minimize
+#     # import statsmodels.tsa.api as smt
+#     # import statsmodels.api as sm
+#     # from tqdm import tqdm_notebook
+#     # from itertools import product
 
 
 # Getting the Data in string format from NodeJS
@@ -106,7 +108,7 @@ def gen_my_plot(prediction, original, my_name, my_technique_label):
     plt.legend()
     mplcyberpunk.add_glow_effects()
 
-    file_name = "public/fig_basic_prediction_" + my_name + '.png'
+    file_name = "/tmp/fig_basic_prediction_" + my_name + '.png'
     plt.savefig(file_name)
 
 # 3) Prediction function for the Market Dynamic
@@ -156,8 +158,22 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_basic_opening.png"
+        # file_name = "public/fig_basic_opening.png"
+        file_name = "/tmp/fig_basic_opening.png"
         plt.savefig(file_name)
+        # plt.show()
+
+        # image = cv2.imread("logo.png")
+         
+        # # Checking if the image is empty or not
+        # if image is None:
+        #     result = "Image is empty!!"
+        # else:
+        #     result = "Image is not empty!!"
+         
+        # # Calling and printing
+        # # the function
+        # print(result)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
         my_technique_label = ""
@@ -205,7 +221,7 @@ for dynamic in pleasePlot:
 
         plt.legend()
         mplcyberpunk.add_glow_effects()
-        file_name = "public/fig_basic_closing.png"
+        file_name = "/tmp/fig_basic_closing.png"
         plt.savefig(file_name)
 
         # Calculating the Prediction Value using MOVING AVERAGE and Exponential Smoothing
@@ -236,7 +252,6 @@ for dynamic in pleasePlot:
 
     else:
         print("No Market Dynamic Found to Plot")
-
 
 # returning the results
 print(result_prediction)
