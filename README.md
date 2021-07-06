@@ -13,10 +13,10 @@ https://stocksaint.herokuapp.com/
 
 ### 1) FrontEnd 
 * BOOTSTRAP 5.0 used for building the frontend.
-* Used different custom with modifications.
+* Used different custom CSS templates with modifications.
 * Connected the front-end to hyper for sending requests.
-* Used Javascript for sliding animation and smooth scroll.
-* Used different API's for the functioning of backend
+* Used Javascript for sliding animations and smooth scrolling.
+* Added different API's for the functioning of backend
 
 ### 2) BackEnd - NodeJS
 * _Express_ Framework used.
