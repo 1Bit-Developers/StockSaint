@@ -1,6 +1,11 @@
 # StockSaint
 ## Visualize | Analyse | Predict
 
+## Endorsed by
+### <b>Jugal Agrawal</b>
+
+_Project Manager|  FX & MM Operations Technology    
+NatWest Markets CDIO – Core Trading Solutions_
 
 ## Why?
 
