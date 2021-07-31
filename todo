@@ -1,0 +1,7 @@
+TODO:
+
+1) avoid writing the ticker and stock exchange by user itself...user just need to write the name of the company and 
+   system automatically detects the ticker symbol and stock exchange.
+  
+2) maybe a user authentication and data storage in database...user can bookmark certain stock he likes and will get a email-notification on a 
+   certain trigger..so rather than everytime filling the basic and advanced user form..he can directly view the graphs based on pre-selected criterions.
