@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import mplcyberpunk
 
-# print("loda hai tu")
+
 #     # import seaborn as sns
 #     # from sklearn.metrics import r2_score, median_absolute_error, mean_absolute_error
 #     # from sklearn.metrics import median_absolute_error, mean_squared_error, mean_squared_log_error
